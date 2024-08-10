@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AIC Website</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+    </head>
+    <body>
+        <div class="navbarContainer">
+            <div class="logoContainer">
+                <p style="font-weight: bold; font-size: 25px; margin: 0px">
+                    AIO.Signore
+                </p>
+            </div>
+            <div class="searchBar">
+                <input
+                    type="text"
+                    placeholder="Enter your query"
+                    class="searchInput"
+                />
+                <button class="search">Search</button>
+            </div>
+            <div class="otherActions">
+                <button class="copyAll" type="button">Copy All Results</button>
+                <button class="searchTool">Search Tool</button>
+            </div>
+        </div>
+        <div className="webBody">
+            <div class="responseContainer"></div>
+        </div>
+        <div class="searchToolContainer"></div>
+        <div class="videoController">
+            <div class="totalContainer">
+                <div
+                    style="
+                        font-weight: bold;
+                        font-size: 20px;
+                        width: 1090px;
+                        border-radius: 20px;
+                        text-align: center;
+                        background-color: aliceblue;
+                        padding: 10px 30px 10px 30px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    "
+                >
+                    AIO.Signore's Video Player & Frame Searcher
+                </div>
+                <div class="vidnSearch">
+                    <div class="videoContainer">
+                        <video
+                            src="videos/L10_V001.mp4"
+                            currentTime="3.5"
+                            onplay="false"
+                            class="video"
+                        ></video>
+                    </div>
+                    <div class="videoFunction">
+                        <div
+                            style="
+                                text-align: center;
+                                font-weight: bold;
+                                text-decoration: underline;
+                            "
+                        >
+                            Video Controller
+                        </div>
+                        <div class="controller">
+                            <div class="playVideo">
+                                <div>Play</div>
+                                <span class="material-symbols-outlined">
+                                    play_arrow
+                                </span>
+                            </div>
+                            <div class="stopVideo">
+                                <div>Stop</div>
+                                <span class="material-symbols-outlined">
+                                    stop
+                                </span>
+                            </div>
+                            <div class="exitVideo">
+                                <div>Exit</div>
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div
+                            style="
+                                text-align: center;
+                                font-weight: bold;
+                                text-decoration: underline;
+                            "
+                        >
+                            Frame Searcher
+                        </div>
+                        <div class="functionContainer">
+                            <label>Video</label>
+                            <input
+                                type="text"
+                                placeholder="Enter video name"
+                                class="nameInput"
+                            />
+                        </div>
+                        <div class="functionContainer">
+                            <label>Frame</label>
+                            <input
+                                type="text"
+                                placeholder="Enter frame number"
+                                class="frameInput"
+                            />
+                        </div>
+                        <div class="functionContainer">
+                            <label>FPS</label>
+                            <input
+                                type="text"
+                                placeholder="Enter FPS"
+                                class="fpsInput"
+                            />
+                        </div>
+                        <div class="controller">
+                            <button type="submit" class="videoSearch">
+                                Search
+                            </button>
+                        </div>
+                        <div class="controller">
+                            <button class="goBack">Back to Responses</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoDetails">
+                    <div class="queryText"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blur"></div>
+        <script src="js/loadResponses.js"></script>
+        <script src="js/copy.js"></script>
+    </body>
+</html>
